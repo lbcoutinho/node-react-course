@@ -1,0 +1,28 @@
+{
+  "name": "fullstack-react",
+  "version": "1.0.0",
+  "description": "Fullstack React Course",
+  "main": "index.js",
+  "engines": {
+    "node": "8.11.1",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lbcoutinho/fullstack-react.git"
+  },
+  "keywords": ["javascript", "react"],
+  "author": "Leandro Coutinho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lbcoutinho/fullstack-react/issues"
+  },
+  "homepage": "https://github.com/lbcoutinho/fullstack-react#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "4.16.3"
+  }
+}
