@@ -61,4 +61,4 @@ typings/
 dist/
 
 # Secret files
-keys.js
+dev.js
