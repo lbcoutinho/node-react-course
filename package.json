@@ -1,18 +1,19 @@
 {
-  "name": "fullstack-react",
+  "name": "node-react-course",
   "version": "1.0.0",
-  "description": "Fullstack React Course",
+  "description": "Node with React: Fullstack Course",
   "main": "index.js",
   "engines": {
     "node": "8.11.1",
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lbcoutinho/fullstack-react.git"
+    "url": "git+ssh://git@github.com/lbcoutinho/node-react-course.git"
   },
   "keywords": ["javascript", "react"],
   "author": "Leandro Coutinho",
@@ -23,6 +24,11 @@
   "homepage": "https://github.com/lbcoutinho/fullstack-react#readme",
   "devDependencies": {},
   "dependencies": {
-    "express": "4.16.3"
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "4.16.3",
+    "mongoose": "5.0.14",
+    "nodemon": "1.17.3",
+    "passport": "0.4.0",
+    "passport-google-oauth20": "1.0.0"
   }
 }

@@ -59,3 +59,6 @@ typings/
 
 # webpack
 dist/
+
+# Secret files
+keys.js
