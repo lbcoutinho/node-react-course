@@ -8,14 +8,19 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/lbcoutinho/node-react-course.git"
   },
-  "keywords": ["javascript", "react"],
+  "keywords": [
+    "javascript",
+    "react"
+  ],
   "author": "Leandro Coutinho",
   "license": "MIT",
   "bugs": {
@@ -24,6 +29,7 @@
   "homepage": "https://github.com/lbcoutinho/fullstack-react#readme",
   "devDependencies": {},
   "dependencies": {
+    "concurrently": "3.5.1",
     "cookie-session": "^2.0.0-beta.3",
     "express": "4.16.3",
     "mongoose": "5.0.14",
