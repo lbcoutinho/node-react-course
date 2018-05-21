@@ -14,7 +14,7 @@ passport.deserializeUser(async (id, done) => {
 });
 
 passport.use(
-  // TODO: install facebook strategy
+  // Setup GoogleStrategy in passport
   new GoogleStrategy(
     {
       clientID: keys.googleClientID,
@@ -22,6 +22,7 @@ passport.use(
       callbackURL: '/auth/google/callback',
       proxy: true
     },
+    // Callback function that runs after successful authentication
     async (accessToken, refreshToken, profile, done) => {
       const existingUser = await User.findOne({ googleId: profile.id });
 
